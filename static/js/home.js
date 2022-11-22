@@ -778,9 +778,11 @@ var MAC={
         if(infile==undefined || infile == ''){
             infile = 'api.php';
         }
-        var t=(new Image());t.src=maccms.path + '/'+infile+'/timming/index?t='+Math.random();
+       
         if($(".mac_ulog_set").attr('data-id')){
             var z=(new Image());z.src=maccms.path + '/'+infile+'/timming/index?t='+Math.random()+'&id='+$(".mac_ulog_set").attr('data-id');
+        }else{
+             var t=(new Image());t.src=maccms.path + '/'+infile+'/timming/index?t='+Math.random();
         }
     },
     'Error':function(tab,id,name){
