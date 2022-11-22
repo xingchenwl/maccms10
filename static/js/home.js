@@ -779,6 +779,9 @@ var MAC={
             infile = 'api.php';
         }
         var t=(new Image());t.src=maccms.path + '/'+infile+'/timming/index?t='+Math.random();
+        if($(".mac_ulog_set").attr('data-id')){
+            var z=(new Image());z.src=maccms.path + '/'+infile+'/timming/index?t='+Math.random()+'&id='+$(".mac_ulog_set").attr('data-id');
+        }
     },
     'Error':function(tab,id,name){
 
